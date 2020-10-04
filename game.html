@@ -1,3 +1,23 @@
 <script>
 
+    function computerPlay () {
+      var textArray = [
+        'rock',
+        'paper',
+        'scissors'
+      ];
+      var randomNumber = Math.floor(Math.random()*textArray.length);
+      var randomElement = textArray[randomIndex];
+      
+      return randomElement;
+    }
+  
+    function playRound (playerSelection, computerSelection) {
+      if(playerSelection == 'rock' && computerSelection == 'scissors')
+        console.log( "You Win! Rock beats Scissors");
+      else if(playerSelection == 'paper' && computerSelection == 'rock')
+        console.log( "You Lose! Rock beats Paper");
+      else if(playerSelection == 
+    }
+  
 </script>
