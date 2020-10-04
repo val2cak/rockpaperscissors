@@ -1,23 +1,35 @@
-<script>
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+   <head>
+      <h1>Rock Papper Scissor</h1>
+   </head>
+<body>
+    <div class="container">
+        <div class="choices">
+            <button type="button"id="rock">Rock</button>
+            <button type="button" id="paper">Paper</button>
+            <button type="button" id="scissor">Scissor</button>
+        </div>
 
-    function computerPlay () {
-      var textArray = [
-        'rock',
-        'paper',
-        'scissors'
-      ];
-      var randomNumber = Math.floor(Math.random()*textArray.length);
-      var randomElement = textArray[randomIndex];
-      
-      return randomElement;
-    }
-  
-    function playRound (playerSelection, computerSelection) {
-      if(playerSelection == 'rock' && computerSelection == 'scissors')
-        console.log( "You Win! Rock beats Scissors");
-      else if(playerSelection == 'paper' && computerSelection == 'rock')
-        console.log( "You Lose! Rock beats Paper");
-      else if(playerSelection == 
-    }
-  
-</script>
+        <div class="score">
+            <div class="computer-score">
+                <h3>Computer</h3>
+                <p id="Cscore">0</p>
+            </div>
+    
+            <div class="player-score">
+                <h3>Player</h3>
+                <p id="Pscore">0</p>
+            </div>
+        </div>
+    </div>
+
+   <div id="outcome">Choose a button to start</div>
+       
+    <script src="script.mjs"></script>
+    </body>
+
+    
+</html>
+
